@@ -17,3 +17,5 @@
         name: nginx
         state: started
         enabled: yes
+    - name: Replace default Nginx index.html with hostname
+      shell: "echo $(hostname) | sudo tee /usr/share/nginx/html/index.html > /dev/null"
