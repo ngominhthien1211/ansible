@@ -1,5 +1,5 @@
 - name: Install and start Nginx on EC2
-  hosts: FE-EC2
+  hosts: all
   become: true
   tasks:
     - name: Update yum packages
